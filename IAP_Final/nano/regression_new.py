@@ -1,5 +1,6 @@
 import numpy as np
 import onnxruntime as ort
+from preprocess import extract_highlight, embedding
 
 # 음성 전처리
 extract_highlight()
@@ -50,7 +51,9 @@ for i, voice_id in enumerate(voice_keys):
 
     top_idx = np.argsort(probs)[::-1][:K]
 
-    print(f"\n== 음성 '{voice_id}' 에 대한 추천 Top-{K} ==")
+    name = voice_id.replace("cliped_","")
+
+    print(f"\n== 음성 '{name}' 에 대한 추천 Top-{K} ==")
     for rank, idx in enumerate(top_idx, 1):
-        song_name = recommend[idx]
+        song_name = recommend[idx].replace("cliped_","")
         print(f"{rank}. {song_name} | 확률: {probs[idx]*100:.2f}% | 예측: {'좋음' if preds[idx]==1 else '나쁨'}")
