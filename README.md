@@ -35,6 +35,9 @@ Survey2Vec.ipynb : 설문조사 결과 임베딩 코드
  - `wget https://github.com/JUN3-6/IAP_FINAL/archive/refs/heads/main.zip`
  - `unzip main.zip`
  - `mv IAP_FINAL-main/IAP_Final/nano ./nano`
+ - `chmod -R u+rw ./nano`         
+ - `chown -R $(user):$(user) ./nano`
+
  
 3. VGGish 모델 설치
  - `mkdir -p ./model/VGGish`
