@@ -126,7 +126,7 @@ def embedding(input_dir = "test/voice_clips", output_npz = "test/voice_vectors.n
     # ONNX 세션 생성
     sess = onnxruntime.InferenceSession(
         onnx_path,
-        providers=["CUDAExecutionProvider", "CPUExecutionProvider"]
+        providers=["CPUExecutionProvider", "AzureExecutionProvider"]
     )
 
     # 벡터 추출 루프
