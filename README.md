@@ -15,13 +15,15 @@ PC/
   - `model/` : ONNX 모델 및 추론 코드  
   - `voices/` : 사용자 목소리 (`.wav`)  
   - `music/` : 학습한 노래(`.wav`) — 저작권 문제로 업로드하지 않음  
-  - `vectors/` : 임베딩 벡터 (`.npz`)  
+  - `vectors/` : 임베딩 벡터 (`.npz`)
+  - 
 nano/
 - `regression_new.py` : 추천곡 추론 코드  
 - `preprocess.py` : 음성파일 전처리 및 임베딩 코드  
 - `source/`  
   - `model/` : ONNX 모델 및 추론 코드  
-  - `voices/` : 사용자 목소리 (`.wav`)  
+  - `voices/` : 사용자 목소리 (`.wav`)
+  - 
 노래방 선호곡 조사 구글폼/ : 설문조사한 선호곡 리스트와 학습 음성파일 
 Survey2Vec.ipynb : 설문조사 결과 임베딩 코드
 
