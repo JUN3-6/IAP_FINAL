@@ -31,18 +31,18 @@ Survey2Vec.ipynb : 설문조사 결과 임베딩 코드
 
 
 ## 사용 방법
-1. 젯슨 나노 cmd에서 설치
+1. 젯슨 나노 cmd에서 설치/
   wget https://github.com/JUN3-6/IAP_FINAL/archive/refs/heads/main.zip
   unzip main.zip
   mv IAP_FINAL-main/IAP_Final/nano ./nano
   rm -rf IAP_FINAL-main main.zip
 
-3. VGGish 모델 설치
+3. VGGish 모델 설치/
   mkdir -p ./model/VGGish
   wget -O ./model/VGGish/audioset-vggish-3.onnx https://essentia.upf.edu/models/feature-extractors/vggish/audioset-vggish-3.onnx
 
-3. 이하 디렉토리에 음성 녹음
+3. 이하 디렉토리에 음성 녹음/
    `nano/source/test/voice`
    
-4. regression.py 실행
+4. regression.py 실행/
    `python3 regression.py`
