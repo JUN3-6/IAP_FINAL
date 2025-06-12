@@ -7,8 +7,8 @@ extract_highlight()
 embedding()
 
 # 벡터 불러오기
-voices_npz = np.load("./test/voice_vectors.npz")
-songs_npz  = np.load("./vectors/music_vectors.npz")
+voices_npz = np.load("./source/test/voice_vectors.npz")
+songs_npz  = np.load("./source/vectors/music_vectors.npz")
 
 M = len(voices_npz.files)
 N = len(songs_npz.files)
@@ -26,7 +26,7 @@ song_tiled     = np.tile(songs, (M, 1))                  # (M×N, 128)
 X              = np.hstack([voice_repeated, song_tiled]) # (M×N, 256)
 
 # ONNX 모델 로드
-onnx_path = "./model/MLP/model.onnx"
+onnx_path = "./source/model/MLP/model.onnx"
 sess = ort.InferenceSession(onnx_path)
 
 # 입력 이름 확인
