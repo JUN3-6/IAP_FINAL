@@ -14,7 +14,7 @@ import onnxruntime
 import re
 
 
-def extract_highlight(input_dir="test/voice", output_dir="test/voice_clips", clip_duration=15.0):
+def extract_highlight(input_dir="source/test/voice", output_dir="source/test/voice_clips", clip_duration=15.0):
     print("Extracting 15-second highlight segments...")
     os.makedirs(output_dir, exist_ok=True)
 
@@ -112,9 +112,9 @@ def run_vggish_onnx(sess, mel_db):
 
     return embedding.squeeze()
 
-def embedding(input_dir = "test/voice_clips", output_npz = "test/voice_vectors.npz", key_path=""):
+def embedding(input_dir = "source/test/voice_clips", output_npz = "source/test/voice_vectors.npz", key_path=""):
 # 설정
-    onnx_path = "model/VGGish/audioset-vggish-3.onnx"
+    onnx_path = "source/model/VGGish/audioset-vggish-3.onnx"
 
     # 기존 벡터 불러오기 (있다면)
     audio_vectors = {}
