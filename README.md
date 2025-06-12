@@ -39,7 +39,7 @@ Survey2Vec.ipynb : 설문조사 결과 임베딩 코드
  - `chown -R $(whoami):$(whoami) ./nano`
 
  
-3. VGGish 모델 설치
+2. VGGish 모델 설치
  - `mkdir -p ./model/VGGish`
  - `wget -O ./model/VGGish/audioset-vggish-3.onnx https://essentia.upf.edu/models/feature-extractors/vggish/audioset-vggish-3.onnx`
 
