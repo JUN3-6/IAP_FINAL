@@ -40,8 +40,8 @@ Survey2Vec.ipynb : 설문조사 결과 임베딩 코드
 
  
 2. VGGish 모델 설치
- - `mkdir -p ./model/VGGish`
- - `wget -O ./model/VGGish/audioset-vggish-3.onnx https://essentia.upf.edu/models/feature-extractors/vggish/audioset-vggish-3.onnx`
+ - `mkdir -p .nano/source/model/VGGish`
+ - `wget -O .nano/source/model/VGGish/audioset-vggish-3.onnx https://essentia.upf.edu/models/feature-extractors/vggish/audioset-vggish-3.onnx`
 
 3. 이하 디렉토리에 음성 녹음
   - `nano/source/test/voice`
