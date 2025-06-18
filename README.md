@@ -47,4 +47,4 @@ Survey2Vec.ipynb : 설문조사 결과 임베딩 코드
   - `nano/source/test/voice`
    
 4. regression.py 실행/
-  - `python3 regression.py`
+  - `python3 regression_new.py`
